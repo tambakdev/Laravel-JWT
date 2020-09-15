@@ -16,16 +16,10 @@ class UserSeeder extends Seeder
         User::truncate();
         User::insert([
             [
-                'name' => 'Triyadi',
-                'email' => 'triyaid@gmail.com',
-                'password' => Hash::make('albani'),
+                'name' => 'Wong Tambak',
+                'email' => 'tambak@gmail.com',
+                'password' => Hash::make('tambak'),
                 'created_at' => today()->subDays(5),
-            ],
-            [
-                'name' => 'Khusnul Khotimah',
-                'email' => 'nulnul@gmail.com',
-                'password' => Hash::make('albani'),
-                'created_at' => today()->subDays(3),
             ]
         ]);
     }
